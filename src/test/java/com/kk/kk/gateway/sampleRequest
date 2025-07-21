@@ -1,0 +1,11 @@
+curl
+=======
+
+curl --location 'http://localhost:8087/event' \
+--header 'Content-Type: application/json' \
+--data '{
+    "transactionId": 1,
+    "event": "WITHDRAW",
+    "amount": "100.0",
+    "status": "STARTED"
+}'
